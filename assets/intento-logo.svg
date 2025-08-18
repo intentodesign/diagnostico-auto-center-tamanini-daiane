@@ -1,0 +1,6 @@
+<svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="40" rx="4" fill="#1a365d"/>
+  <text x="60" y="25" font-family="Space Grotesk, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="white">INTENTO</text>
+  <circle cx="15" cy="20" r="3" fill="#ed8936"/>
+  <circle cx="105" cy="20" r="3" fill="#ed8936"/>
+</svg>
