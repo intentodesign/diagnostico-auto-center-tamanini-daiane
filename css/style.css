@@ -1,8 +1,92 @@
 /* 
- * COMPACT BRAND DIAGNOSIS - INTENTO METHODOLOGY
+ * COMPACT BRAND DIAGNOSIS - MARKETING CHEIO DE GRAXA
  * Design System for Mature Brand Personality
  * Mobile-First Responsive Design
  */
+
+/* ===== INTRO SCREEN ===== */
+.intro-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff6b35, #f57c00);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeOut 1s ease-in-out 3s forwards;
+}
+
+.intro-content {
+  text-align: center;
+  color: white;
+}
+
+.intro-logo {
+  margin-bottom: var(--space-xl);
+}
+
+.intro-logo-img {
+  width: 120px;
+  height: auto;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+.intro-message {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: var(--space-xl);
+  animation: fadeInUp 1s ease-out 0.5s both;
+}
+
+.loading-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.loading-dots span {
+  width: 12px;
+  height: 12px;
+  background: white;
+  border-radius: 50%;
+  animation: loadingDot 1.5s ease-in-out infinite;
+}
+
+.loading-dots span:nth-child(1) { animation-delay: 0s; }
+.loading-dots span:nth-child(2) { animation-delay: 0.3s; }
+.loading-dots span:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-20px); }
+  60% { transform: translateY(-10px); }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes loadingDot {
+  0%, 100% { transform: scale(1); opacity: 0.7; }
+  50% { transform: scale(1.5); opacity: 1; }
+}
 
 /* ===== CSS CUSTOM PROPERTIES ===== */
 :root {
@@ -154,7 +238,7 @@ a:hover {
 
 strong {
   font-weight: 600;
-  color: var(--gray-800);
+  color: inherit;
 }
 
 em {
@@ -164,7 +248,7 @@ em {
 
 /* ===== UTILITY CLASSES ===== */
 .highlight-primary {
-  color: var(--black);
+  color: var(--brand-accent);
   font-weight: 600;
 }
 
@@ -722,7 +806,7 @@ em {
 .insight-text {
   font-size: 1.125rem;
   margin: 0;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--white);
 }
 
 /* ===== CHALLENGE SECTION ===== */
@@ -1167,10 +1251,11 @@ em {
 }
 
 .budget-assessment {
-  background: var(--brand-accent);
-  color: var(--white);
+  background: var(--gray-100);
+  color: var(--gray-800);
   padding: var(--space-md);
   border-radius: var(--radius-lg);
+  border-left: 4px solid var(--brand-accent);
 }
 
 .investment-options h3 {
@@ -1216,12 +1301,13 @@ em {
 }
 
 .option-investment {
-  background: var(--brand-accent);
-  color: var(--white);
+  background: var(--gray-100);
+  color: var(--gray-800);
   padding: var(--space-md);
   border-radius: var(--radius-lg);
   margin-top: var(--space-md);
   font-size: 0.875rem;
+  border-left: 3px solid var(--brand-accent);
 }
 
 .roi-card {
@@ -1263,15 +1349,16 @@ em {
 }
 
 .roi-note {
-  background: var(--brand-accent);
-  color: var(--white);
+  background: var(--gray-100);
+  color: var(--gray-800);
   padding: var(--space-md);
   border-radius: var(--radius-lg);
+  border-left: 4px solid var(--brand-accent);
 }
 
 .roi-note p {
   margin: 0;
-  color: var(--white);
+  color: var(--gray-800);
 }
 
 /* ===== SOLUTION SECTION ===== */
@@ -1384,6 +1471,230 @@ em {
   margin: 0;
 }
 
+/* ===== TEAM SECTION ===== */
+.team {
+  padding: var(--space-4xl) 0;
+  background: var(--gray-50);
+}
+
+.team-header {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-2xl);
+  margin-bottom: var(--space-3xl);
+}
+
+.team-member {
+  background: var(--white);
+  padding: var(--space-2xl);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  border: 1px solid var(--gray-200);
+  transition: all var(--transition-base);
+}
+
+.team-member:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--brand-accent);
+}
+
+.member-photo {
+  margin-bottom: var(--space-lg);
+}
+
+.member-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--brand-accent);
+  margin: 0 auto;
+  display: block;
+}
+
+.member-info h3 {
+  color: var(--black);
+  margin-bottom: var(--space-sm);
+  font-size: 1.25rem;
+}
+
+.member-role {
+  color: var(--brand-accent);
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--space-md);
+}
+
+.member-description {
+  color: var(--gray-700);
+  font-size: 0.875rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.team-cta {
+  background: var(--black);
+  color: var(--white);
+  padding: var(--space-2xl);
+  border-radius: var(--radius-xl);
+  text-align: center;
+}
+
+.team-cta .cta-content h3 {
+  color: var(--white);
+  margin-bottom: var(--space-lg);
+}
+
+.team-cta .cta-content p {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+/* ===== TESTIMONIALS SECTION ===== */
+.testimonials {
+  padding: var(--space-4xl) 0;
+  background: var(--gray-50);
+}
+
+.testimonials-header {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+}
+
+.testimonial-card {
+  background: var(--white);
+  padding: var(--space-2xl);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--gray-200);
+  transition: all var(--transition-base);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--brand-accent);
+}
+
+.client-info {
+  margin-bottom: var(--space-lg);
+}
+
+.client-info h3 {
+  color: var(--black);
+  margin-bottom: var(--space-xs);
+  font-size: 1.25rem;
+}
+
+.client-company {
+  color: var(--brand-accent);
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+.client-location {
+  color: var(--gray-600);
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
+
+.testimonial-text {
+  color: var(--gray-700);
+  font-style: italic;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ===== PORTFOLIO SECTION ===== */
+.portfolio {
+  padding: var(--space-4xl) 0;
+  background: var(--white);
+}
+
+.portfolio-header {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  margin-bottom: var(--space-3xl);
+}
+
+.portfolio-item {
+  background: var(--white);
+  padding: var(--space-2xl);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--gray-200);
+  transition: all var(--transition-base);
+  text-align: center;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--brand-accent);
+}
+
+.portfolio-content h3 {
+  color: var(--black);
+  margin-bottom: var(--space-sm);
+  font-size: 1.25rem;
+}
+
+.portfolio-type {
+  color: var(--brand-accent);
+  font-weight: 600;
+  margin-bottom: var(--space-md);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.portfolio-description {
+  color: var(--gray-700);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.portfolio-highlight {
+  background: var(--black);
+  color: var(--white);
+  padding: var(--space-2xl);
+  border-radius: var(--radius-xl);
+  text-align: center;
+}
+
+.highlight-content h3 {
+  color: var(--white);
+  margin-bottom: var(--space-md);
+}
+
+.highlight-content p {
+  color: var(--white);
+  margin: 0;
+  line-height: 1.6;
+}
+
 /* ===== CONTACT SECTION ===== */
 .contact {
   padding: var(--space-4xl) 0;
@@ -1443,6 +1754,10 @@ em {
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: var(--space-xl);
   font-size: 1.125rem;
+}
+
+.cta-main p strong {
+  color: var(--white);
 }
 
 .cta-buttons {
@@ -1591,10 +1906,15 @@ em {
   
   .market-data {
     grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-xl);
   }
   
   .info-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -1603,6 +1923,11 @@ em {
   .hero-container {
     grid-template-columns: 1fr 1fr;
     text-align: left;
+  }
+  
+  .market-data {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
   }
   
   .hero-content {
@@ -1654,6 +1979,10 @@ em {
     grid-template-columns: repeat(2, 1fr);
   }
   
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
   .footer-content {
     grid-template-columns: 2fr 1fr 1fr;
     text-align: left;
@@ -1685,6 +2014,18 @@ em {
   
   .diferentials-grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .team-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .testimonials-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
   
   .challenge-item {

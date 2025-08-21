@@ -1,854 +1,1306 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="wf-proximanova-n7-active wf-adobeclean-n4-active wf-lato-n3-active wf-lato-i9-active wf-adobeclean-n8-active wf-lato-i4-active wf-lato-n4-active wf-adobeclean-n3-active wf-adobeclean-n7-active wf-lato-n7-active wf-active">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Diagnóstico de Marca Estratégico - Compact Máquinas | Análise crítica por Intento - Especialistas em transformação de marcas no setor automotivo">
-    <meta name="keywords" content="diagnóstico de marca, Compact máquinas, Cuiabá, agronegócio, identidade visual, branding automotivo">
-    <meta name="author" content="Intento - Estratégia de Marca">
+    <title>Compact - Diagnóstico de Marca</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     
-    <!-- Open Graph / Facebook -->
+    <!-- Meta Tags -->
+    <meta name="robots" content="noindex">
+    <meta property="og:title" content="Compact - Diagnóstico de Marca">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="#">
-    <meta property="og:title" content="Diagnóstico de Marca - Compact | Intento">
-    <meta property="og:description" content="Análise estratégica revela contradições que impedem a Compact de dominar o mercado de máquinas em MT">
-    <meta property="og:image" content="assets/compact-og-image.jpg">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="#">
-    <meta property="twitter:title" content="Diagnóstico de Marca - Compact | Intento">
-    <meta property="twitter:description" content="Análise estratégica revela contradições que impedem a Compact de dominar o mercado de máquinas em MT">
-    <meta property="twitter:image" content="assets/compact-og-image.jpg">
-
-    <title>Diagnóstico de Marca - Compact | Análise Estratégica Intento</title>
+    <meta property="og:description" content="Análise estratégica de marca da Compact - Máquinas Agrícolas">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Compact - Diagnóstico de Marca">
+    <meta name="twitter:description" content="Análise estratégica de marca da Compact - Máquinas Agrícolas">
     
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <!-- Styles -->
+    <link href="./assets/runtime.css" type="text/css" rel="stylesheet">
+    <link href="./assets/fonts.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animations.css">
-    
-    <!-- Analytics placeholder -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar" role="navigation" aria-label="navegação principal">
-        <div class="nav-container">
-            <div class="nav-brand">
-                <img src="assets/intento-logo.svg" alt="Intento - Estratégia de Marca" class="nav-logo">
-            </div>
-            <div class="nav-actions">
-                <a href="#contato" class="nav-cta" data-track="nav_contact">Falar com Especialista</a>
-            </div>
-        </div>
-    </nav>
+    <style>
+        /* ===== INTRO SCREEN ===== */
+        .intro-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff6b35, #f57c00);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            animation: fadeOut 1s ease-in-out 3s forwards;
+        }
 
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-badge animate-fade-up">
-                    <span class="badge-icon">🎯</span>
-                    <span>Diagnóstico de Marca Estratégico</span>
-                </div>
-                
-                <h1 class="hero-title animate-fade-up" style="animation-delay: 0.2s;">
-                    <span class="highlight-brand">Compact:</span><br>
-                    A Especialização Invisível que <span class="highlight-primary">Desperdiça Oportunidades</span>
-                </h1>
-                
-                <div class="hero-subtitle animate-fade-up" style="animation-delay: 0.4s;">
-                    <p>Análise crítica revela como uma empresa com <strong>potencial para dominar o mercado de máquinas em MT</strong> compete como oficina comum por não comunicar sua verdadeira especialização.</p>
-                </div>
+        .intro-content {
+            text-align: center;
+            color: white;
+        }
 
-                <div class="hero-stats animate-fade-up" style="animation-delay: 0.6s;">
-                    <div class="stat-item">
-                        <span class="stat-number">1-2</span>
-                        <span class="stat-label">Anos de Mercado</span>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat-item">
-                        <span class="stat-number">2-5</span>
-                        <span class="stat-label">Funcionários</span>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat-item">
-                        <span class="stat-number">R$30k</span>
-                        <span class="stat-label">Faturamento Mensal</span>
-                    </div>
-                </div>
+        .intro-logo {
+            margin-bottom: 2rem;
+        }
 
-                <div class="hero-actions animate-fade-up" style="animation-delay: 0.8s;">
-                    <a href="#descoberta" class="btn btn-primary" data-track="hero_discover">
-                        Descobrir a Contradição
-                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
-                            <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </a>
-                    <a href="#contato" class="btn btn-secondary" data-track="hero_contact">
-                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
-                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="2"/>
-                        </svg>
-                        Agendar Consulta
-                    </a>
-                </div>
-            </div>
-            
-            <div class="hero-visual">
-                <div class="hero-image-container">
-                    <img src="assets/compact-fachada.jpg" alt="Fachada da Compact - Estrutura que contradiz problemas reportados" class="hero-image animate-fade-left">
-                    <div class="image-overlay">
-                        <div class="overlay-badge">
-                            <span class="badge-text">📍 Cuiabá - MT</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        .intro-logo-img {
+            width: 120px;
+            height: auto;
+            animation: bounce 2s ease-in-out infinite;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .intro-message {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            animation: fadeInUp 1s ease-out 0.5s both;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.3;
+            letter-spacing: -0.01em;
+            white-space: pre-line;
+            word-wrap: break-word;
+        }
         
-        <div class="hero-scroll-indicator">
-            <span>Role para descobrir</span>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-        </div>
-    </section>
+        @media (max-width: 768px) {
+            .intro-message {
+                font-size: 1.6rem;
+                line-height: 1.4;
+                padding: 0 1rem;
+                text-align: center;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .intro-message {
+                font-size: 1.4rem;
+                line-height: 1.5;
+                padding: 0 0.5rem;
+            }
+        }
 
-    <!-- Narrative Introduction -->
-    <section class="narrative" id="narrativa">
-        <div class="section-container">
-            <div class="narrative-content">
-                <div class="section-header">
-                    <span class="section-badge animate-fade-up">🔍 Metodologia Intento</span>
-                    <h2 class="section-title animate-fade-up">
-                        Por Que Este Diagnóstico <span class="highlight-primary">Vai Incomodar</span>
-                    </h2>
-                </div>
+        .loading-dots {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+        }
 
-                <div class="narrative-grid">
-                    <div class="narrative-card animate-fade-up">
-                        <div class="card-icon">⚡</div>
-                        <h3>Zero Diplomacia</h3>
-                        <p>Não somos consultores que confirmam o que você quer ouvir. Nossa missão é <strong>revelar verdades desconfortáveis</strong> que impedem seu crescimento.</p>
-                    </div>
+        .loading-dots span {
+            width: 12px;
+            height: 12px;
+            background: white;
+            border-radius: 50%;
+            animation: loadingDot 1.5s ease-in-out infinite;
+        }
 
-                    <div class="narrative-card animate-fade-up" style="animation-delay: 0.2s;">
-                        <div class="card-icon">🎯</div>
-                        <h3>Análise Sem Filtros</h3>
-                        <p>Identificamos <strong>contradições entre o que você diz</strong> e o que realmente acontece. Toda empresa subestima suas capacidades.</p>
-                    </div>
+        .loading-dots span:nth-child(1) { animation-delay: 0s; }
+        .loading-dots span:nth-child(2) { animation-delay: 0.3s; }
+        .loading-dots span:nth-child(3) { animation-delay: 0.6s; }
 
-                    <div class="narrative-card animate-fade-up" style="animation-delay: 0.4s;">
-                        <div class="card-icon">💡</div>
-                        <h3>Oportunidades Desperdiçadas</h3>
-                        <p>Revelamos <strong>potenciais não explorados</strong> que estão na sua frente, mas que a marca atual torna invisíveis.</p>
-                    </div>
-                </div>
+        @keyframes fadeOut {
+            to {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
 
-                <div class="narrative-warning animate-fade-up" style="animation-delay: 0.6s;">
-                    <div class="warning-icon">⚠️</div>
-                    <div class="warning-content">
-                        <h4>Aviso Importante</h4>
-                        <p>Este diagnóstico foi realizado com base nas informações fornecidas no briefing de <strong>07/08/2025</strong> e análise do Instagram @compactmaquinas. Para uma análise completa, seriam necessárias imagens da fachada atual e prints recentes das redes sociais.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-20px); }
+            60% { transform: translateY(-10px); }
+        }
 
-    <!-- Discovery Section -->
-    <section class="discovery shock-section" id="descoberta">
-        <div class="section-container">
-            <div class="shock-content">
-                <div class="shock-badge animate-fade-up">
-                    <span class="badge-icon">🚨</span>
-                    <span>DESCOBERTA CHOCANTE</span>
-                </div>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-                <h2 class="shock-title animate-fade-up">
-                    Vocês Reclamam de <span class="highlight-danger">"Dificuldade para Atrair Clientes"</span><br>
-                    Sendo Especialistas em um Nicho que <span class="highlight-primary">90% Não Domina!</span>
-                </h2>
+        @keyframes loadingDot {
+            0%, 100% { transform: scale(1); opacity: 0.7; }
+            50% { transform: scale(1.5); opacity: 1; }
+        }
 
-                <div class="shock-grid">
-                    <div class="shock-card animate-fade-up">
-                        <div class="shock-number">@compactmaquinas</div>
-                        <div class="shock-label">Instagram revela especialização em máquinas</div>
-                    </div>
+        /* ===== TEAM CARD ANIMATIONS ===== */
+        .team-card {
+            transition: all 0.3s ease;
+        }
 
-                    <div class="shock-card animate-fade-up" style="animation-delay: 0.2s;">
-                        <div class="shock-number">Cuiabá-MT</div>
-                        <div class="shock-label">Capital do agronegócio brasileiro</div>
-                    </div>
+        .team-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15) !important;
+        }
 
-                    <div class="shock-card animate-fade-up" style="animation-delay: 0.4s;">
-                        <div class="shock-number">R$ 3k</div>
-                        <div class="shock-label">Orçamento disponível indica capacidade</div>
-                    </div>
+        /* ===== DYNAMIC ANIMATIONS ===== */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
 
-                    <div class="shock-card animate-fade-up" style="animation-delay: 0.6s;">
-                        <div class="shock-number">1-2 anos</div>
-                        <div class="shock-label">Estruturação rápida com 2-5 funcionários</div>
-                    </div>
-                </div>
+        .fade-in-up:nth-child(1) { animation-delay: 0.1s; }
+        .fade-in-up:nth-child(2) { animation-delay: 0.2s; }
+        .fade-in-up:nth-child(3) { animation-delay: 0.3s; }
+        .fade-in-up:nth-child(4) { animation-delay: 0.4s; }
 
-                <div class="shock-insight animate-fade-up" style="animation-delay: 0.8s;">
-                    <h3>A Verdade Brutal:</h3>
-                    <p>O problema não é <strong>"dificuldade para atrair clientes"</strong> - é não saber <span class="highlight-primary">QUAL TIPO de cliente atrair</span>. Vocês competem no mercado genérico sendo especialistas únicos.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        .pulse-button {
+            animation: pulse 2s infinite;
+        }
 
-    <!-- Current Diagnosis -->
-    <section class="diagnosis" id="diagnostico">
-        <div class="section-container">
-            <div class="diagnosis-header">
-                <span class="section-badge animate-fade-up">📊 Situação Atual</span>
-                <h2 class="section-title animate-fade-up">
-                    O Paradoxo da <span class="highlight-brand">Compact</span>
-                </h2>
-            </div>
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
 
-            <div class="diagnosis-grid">
-                <!-- Pontos Fortes -->
-                <div class="diagnosis-card positive animate-fade-up">
-                    <div class="card-header">
-                        <div class="card-icon positive">🟢</div>
-                        <h3>Assets Subestimados</h3>
-                    </div>
-                    <ul class="card-list">
-                        <li>Especialização em máquinas (nome + Instagram revelam)</li>
-                        <li>Localização estratégica no hub do agronegócio</li>
-                        <li>Crescimento estruturado (2-5 funcionários em 1-2 anos)</li>
-                        <li>Personalidade de marca "madura" indica confiabilidade</li>
-                        <li>Capacidade de investimento (R$3k disponíveis)</li>
-                        <li>Diferencial real: "Confiança e qualidade"</li>
-                    </ul>
-                </div>
+        /* ===== FADE IN ANIMATIONS ===== */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        
+        .fade-in-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Delayed animations for staggered effect */
+        .fade-in-section:nth-child(odd) {
+            transition-delay: 0.1s;
+        }
+        
+        .fade-in-section:nth-child(even) {
+            transition-delay: 0.2s;
+        }
 
-                <!-- Problemas -->
-                <div class="diagnosis-card negative animate-fade-up" style="animation-delay: 0.3s;">
-                    <div class="card-header">
-                        <div class="card-icon negative">🔴</div>
-                        <h3>Oportunidades Desperdiçadas</h3>
-                    </div>
-                    <ul class="card-list">
-                        <li>Especialização invisível para o mercado</li>
-                        <li>Competem como oficina genérica</li>
-                        <li>Não exploram potencial do agronegócio MT</li>
-                        <li>Marca não comunica expertise em máquinas</li>
-                        <li>Subestimação das próprias capacidades</li>
-                        <li>Faturamento baixo para o potencial real</li>
-                    </ul>
-                </div>
-            </div>
+        /* ===== IMPROVED COLOR PALETTE ===== */
+        :root {
+            --primary-orange: #f83600;
+            --primary-green: #333333;
+            --accent-light: #ff6b35;
+            --text-dark: #333;
+            --text-light: #666;
+            --bg-light: #f8f9fa;
+        }
 
-            <div class="diagnosis-insight animate-fade-up" style="animation-delay: 0.6s;">
-                <div class="insight-content">
-                    <h3>🎯 O Problema Central</h3>
-                    <p class="insight-text">
-                        <strong>Vocês são especialistas em máquinas mas comunicam como oficina comum.</strong><br>
-                        Esta é a raiz de todos os "problemas" relatados no briefing.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+        /* Custom Theme Base */
+        .custom-compact-theme .title-section {
+            background-color: #f83600; /* Laranja principal */
+            background-image: url('assets/oficina-placeholder.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        
+        .custom-compact-theme .title-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(1px);
+            z-index: 1;
+        }
+        
+        .custom-compact-theme .title-section .section-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .custom-compact-theme .single-column-section .section-background {
+            background-color: #f7f7f7; /* Cinza claro para conteúdo */
+        }
+        
+        /* Increased spacing between sections */
+        .custom-compact-theme .section {
+            margin-bottom: 3rem;
+        }
+        
+        .custom-compact-theme .single-column-section {
+            margin-bottom: 4rem;
+        }
+        
+        .custom-compact-theme .title-header {
+            height: 100%;
+            text-align: center;
+            box-sizing: border-box;
+            font-size: 0;
+            padding: 64px 5% 64px 5%;
+            background-color: transparent;
+        }
+        
+        .custom-compact-theme .title-header-view {
+            position: relative;
+            display: inline-block;
+            padding: 0px 0px 0px 0px;
+            width: 100%;
+            max-width: 95%;
+            background-color: transparent;
+            border-radius: 0px 0px 0px 0px;
+        }
+        
+        @media (min-width: 768px) {
+            .custom-compact-theme .title-header-view {
+                max-width: 90%;
+            }
+        }
+        
+        @media (min-width: 1200px) {
+            .custom-compact-theme .title-header-view {
+                max-width: 85%;
+            }
+        }
+        
+        .custom-compact-theme .title-header .title {
+            margin: 0 0;
+            padding: 0 0;
+            max-height: 3.9em;
+            color: rgba(255,255,255,1);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 4.5rem;
+            font-style: normal;
+            font-weight: 900;
+            text-transform: uppercase;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+            text-shadow: 0px 2px 2px rgba(0,0,0,0.25);
+        }
+        
+        .custom-compact-theme .title-header .subtitle {
+            margin: 0.5em 0 0 0;
+            color: rgba(255,255,255,0.9);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+            line-height: 1.4;
+            text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+        }
 
-    <!-- Challenge Identification -->
-    <section class="challenge" id="desafio">
-        <div class="section-container">
-            <div class="challenge-header">
-                <span class="section-badge animate-fade-up">🔍 Análise Crítica</span>
-                <h2 class="section-title animate-fade-up">
-                    Como a Marca Atual <span class="highlight-danger">Sabota</span> o Potencial
-                </h2>
-            </div>
+        /* Content Styles */
+        .custom-compact-theme.article,
+        .custom-compact-theme .section {
+            background-color: rgba(247,247,247,1);
+        }
 
-            <div class="challenge-grid">
-                <div class="challenge-item animate-fade-up">
-                    <div class="challenge-number">1</div>
-                    <div class="challenge-content">
-                        <h3>Expertise Invisível</h3>
-                        <p>A especialização em máquinas não fica clara na comunicação. Clientes não sabem que vocês são diferentes das oficinas convencionais.</p>
-                        <div class="impact">
-                            <strong>Impacto:</strong> Competição por preço em vez de diferenciação técnica
-                        </div>
-                    </div>
-                </div>
+        .custom-compact-theme .section-content .content-container {
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 2.5rem;
+            padding-bottom: 2.5rem;
+            max-width: none;
+        }
 
-                <div class="challenge-item animate-fade-up" style="animation-delay: 0.2s;">
-                    <div class="challenge-number">2</div>
-                    <div class="challenge-content">
-                        <h3>Mercado Subutilizado</h3>
-                        <p>Cuiabá = capital brasileira do agronegócio. Milhares de máquinas agrícolas precisando de especialistas. Vocês competem por carros.</p>
-                        <div class="impact">
-                            <strong>Impacto:</strong> Ignoram o mercado mais lucrativo da região
-                        </div>
-                    </div>
-                </div>
+        /* Typography Hierarchy */
+        .custom-compact-theme .content-container h1 {
+            color: #f83600;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-weight: 800;
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .custom-compact-theme .content-container h2 {
+            color: #f83600;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-weight: 700;
+            font-size: 2.25rem;
+            line-height: 1.3;
+            margin-bottom: 1.25rem;
+            margin-top: 2rem;
+        }
+        
+        .custom-compact-theme .content-container h3 {
+            color: #f83600;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            line-height: 1.4;
+            margin-bottom: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .custom-compact-theme .content-container h4 {
+            color: #333333;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-weight: 600;
+            font-size: 1.25rem;
+            line-height: 1.4;
+            margin-bottom: 0.75rem;
+            margin-top: 1.25rem;
+        }
 
-                <div class="challenge-item animate-fade-up" style="animation-delay: 0.4s;">
-                    <div class="challenge-number">3</div>
-                    <div class="challenge-content">
-                        <h3>Crescimento Não Valorizado</h3>
-                        <p>Estrutura robusta em pouco tempo indica competência operacional, mas isso não vira autoridade percebida.</p>
-                        <div class="impact">
-                            <strong>Impacto:</strong> Confiabilidade comprovada permanece invisível
-                        </div>
-                    </div>
-                </div>
+        .custom-compact-theme .content-container p {
+            color: rgba(51, 51, 51, 1);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 1.125rem;
+            font-weight: 400;
+            line-height: 1.7;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        
+        .custom-compact-theme .content-container p strong {
+            font-weight: 600;
+            color: #f83600;
+        }
 
-                <div class="challenge-item animate-fade-up" style="animation-delay: 0.6s;">
-                    <div class="challenge-number">4</div>
-                    <div class="challenge-content">
-                        <h3>Posicionamento Contraditório</h3>
-                        <p>"@compactmaquinas" + "personalidade madura" sugere especialização técnica séria, mas comunicação genérica anula tudo.</p>
-                        <div class="impact">
-                            <strong>Impacto:</strong> Confusão sobre o que a empresa realmente faz
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        .custom-compact-theme .content-container p + p {
+            margin-top: 1.5rem;
+        }
 
-    <!-- Digital Presence Analysis -->
-    <section class="digital-analysis" id="presenca-digital">
-        <div class="section-container">
-            <div class="analysis-header">
-                <span class="section-badge animate-fade-up">📱 Presença Digital</span>
-                <h2 class="section-title animate-fade-up">
-                    Instagram: <span class="highlight-primary">Pista da Especialização</span> Não Explorada
-                </h2>
-            </div>
+        /* Button Styles */
+        .custom-compact-theme .content-container a.link-button {
+            display: inline-block;
+            border-radius: 25px;
+            padding: 14px 32px;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 1.125rem;
+            font-weight: 600;
+            text-decoration: none;
+            text-align: center;
+            color: rgba(255,255,255,1);
+            background-color: #f83600;
+            transition: all 0.3s ease;
+            border: 2px solid #f83600;
+        }
 
-            <div class="digital-content">
-                <div class="digital-insight animate-fade-up">
-                    <div class="insight-card">
-                        <div class="card-icon">🔍</div>
-                        <h3>O Que o @compactmaquinas Revela</h3>
-                        <p>O nome escolhido para o Instagram não é coincidência. Indica <strong>especialização consciente em máquinas</strong>, mas essa diferenciação não está sendo comunicada estrategicamente.</p>
-                    </div>
-                </div>
+        .custom-compact-theme .content-container a.link-button:hover {
+            background-color: #e63200; /* Laranja mais escuro */
+            border-color: #e63200;
+            transform: translateY(-2px);
+        }
 
-                <div class="digital-placeholder animate-fade-up" style="animation-delay: 0.3s;">
-                    <div class="placeholder-content">
-                        <div class="placeholder-icon">📱</div>
-                        <h4>Análise Detalhada do Instagram</h4>
-                        <p><em>[Aguardando prints do Instagram @compactmaquinas para análise completa de conteúdo, engajamento e posicionamento atual]</em></p>
-                        <div class="placeholder-note">
-                            <strong>Para otimizar esta análise:</strong> Enviar prints das últimas 10 postagens e stories destacados
-                        </div>
-                    </div>
-                </div>
+        /* Image Styles */
+        .custom-compact-theme .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
 
-                <div class="digital-hypothesis animate-fade-up" style="animation-delay: 0.6s;">
-                    <h3>Hipótese Baseada no Padrão Observado</h3>
-                    <div class="hypothesis-grid">
-                        <div class="hypothesis-item">
-                            <strong>Provável Realidade:</strong>
-                            <p>Conteúdo genérico sobre "serviços automotivos" sem destacar especialização em máquinas</p>
-                        </div>
-                        <div class="hypothesis-item">
-                            <strong>Oportunidade Perdida:</strong>
-                            <p>Instagram deveria ser vitrine da expertise técnica em máquinas agrícolas e industriais</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        /* Quote Styles */
+        .custom-compact-theme .content-container blockquote {
+            background-color: rgba(255, 243, 224, 1);
+            border-left: 4px solid #f83600;
+            padding: 1.25rem 1.75rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: #e63200;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 1.0625rem;
+            line-height: 1.6;
+            font-weight: 500;
+            border-radius: 8px;
+        }
 
-    <!-- Differentials Analysis -->
-    <section class="differentials" id="diferenciais">
-        <div class="section-container">
-            <div class="differentials-header">
-                <span class="section-badge animate-fade-up">💎 Análise de Diferenciais</span>
-                <h2 class="section-title animate-fade-up">
-                    "Confiança e Qualidade": <span class="highlight-primary">Genérico</span> ou <span class="highlight-success">Diferencial Real</span>?
-                </h2>
-            </div>
+        /* Brand Header */
+        .brand-header {
+            background-color: rgba(255,255,255,.95);
+            border-bottom: solid 1px rgba(220,224,227,0.5);
+            padding: 1rem 2rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-            <div class="differentials-analysis">
-                <div class="analysis-card critical animate-fade-up">
-                    <div class="card-header">
-                        <div class="card-icon warning">⚠️</div>
-                        <h3>A Crítica Honesta</h3>
-                    </div>
-                    <div class="card-content">
-                        <p><strong>"Confiança e qualidade"</strong> é o que 99% das oficinas afirmam ter. Sozinhos, são diferenciais genéricos que não convencem ninguém.</p>
-                        <div class="critical-note">
-                            <em>Todo mundo diz isso. Por que o cliente acreditaria em vocês?</em>
-                        </div>
-                    </div>
-                </div>
+        .brand-header .logo-text {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: #f83600;
+            letter-spacing: 0.02em;
+        }
 
-                <div class="analysis-card opportunity animate-fade-up" style="animation-delay: 0.3s;">
-                    <div class="card-header">
-                        <div class="card-icon success">✅</div>
-                        <h3>O Diferencial Real (Escondido)</h3>
-                    </div>
-                    <div class="card-content">
-                        <p>Mas quando aplicados à <strong>especialização em máquinas</strong>, ganham poder:</p>
-                        <ul>
-                            <li><strong>Confiança:</strong> Especialistas que entendem a complexidade das máquinas</li>
-                            <li><strong>Qualidade:</strong> Precision técnica para equipamentos especializados</li>
-                        </ul>
-                        <div class="opportunity-note">
-                            <em>A especialização transforma genérico em único.</em>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        .brand-header .actions .button {
+            background-color: #f83600;
+            color: white;
+            padding: 10px 22px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 600;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 0.9375rem;
+            transition: all 0.3s ease;
+        }
 
-            <div class="differentials-transformation animate-fade-up" style="animation-delay: 0.6s;">
-                <h3>A Transformação Necessária</h3>
-                <div class="transformation-grid">
-                    <div class="transformation-item">
-                        <div class="transform-before">
-                            <h4>ANTES (Genérico)</h4>
-                            <p>"Oferecemos confiança e qualidade"</p>
-                        </div>
-                        <div class="transform-arrow">➡️</div>
-                        <div class="transform-after">
-                            <h4>DEPOIS (Específico)</h4>
-                            <p>"A confiança técnica que suas máquinas precisam"</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        .brand-header .actions .button:hover {
+            background-color: #e63200;
+        }
 
-    <!-- Target Audience Reality Check -->
-    <section class="audience-check" id="publico-alvo">
-        <div class="section-container">
-            <div class="audience-header">
-                <span class="section-badge animate-fade-up">🎯 Público-Alvo</span>
-                <h2 class="section-title animate-fade-up">
-                    Quem Deveria Ser o <span class="highlight-brand">Cliente Ideal</span> da Compact?
-                </h2>
-            </div>
-
-            <div class="audience-analysis">
-                <div class="audience-current animate-fade-up">
-                    <div class="audience-card current">
-                        <div class="card-header">
-                            <div class="card-icon warning">❌</div>
-                            <h3>Público Atual (Provável)</h3>
-                        </div>
-                        <div class="audience-profile">
-                            <div class="profile-item">
-                                <strong>Quem:</strong> Donos de carros comuns
-                            </div>
-                            <div class="profile-item">
-                                <strong>Decisão:</strong> Baseada em preço
-                            </div>
-                            <div class="profile-item">
-                                <strong>Problema:</strong> Competição acirrada
-                            </div>
-                            <div class="profile-item">
-                                <strong>Resultado:</strong> Margens baixas, muito esforço
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="audience-ideal animate-fade-up" style="animation-delay: 0.3s;">
-                    <div class="audience-card ideal">
-                        <div class="card-header">
-                            <div class="card-icon success">✅</div>
-                            <h3>Público Ideal (Oportunidade)</h3>
-                        </div>
-                        <div class="audience-profile">
-                            <div class="profile-item">
-                                <strong>Quem:</strong> Donos de máquinas agrícolas/industriais
-                            </div>
-                            <div class="profile-item">
-                                <strong>Decisão:</strong> Baseada em especialização
-                            </div>
-                            <div class="profile-item">
-                                <strong>Vantagem:</strong> Poucos concorrentes especializados
-                            </div>
-                            <div class="profile-item">
-                                <strong>Resultado:</strong> Margens altas, menos concorrência
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="audience-opportunity animate-fade-up" style="animation-delay: 0.6s;">
-                <div class="opportunity-card">
-                    <h3>🌾 O Mercado que Vocês Ignoram</h3>
-                    <div class="market-data">
-                        <div class="data-item">
-                            <span class="data-number">70%</span>
-                            <span class="data-label">da produção brasileira de soja sai de MT</span>
-                        </div>
-                        <div class="data-item">
-                            <span class="data-number">Milhares</span>
-                            <span class="data-label">de máquinas agrícolas na região</span>
-                        </div>
-                        <div class="data-item">
-                            <span class="data-number">Alto</span>
-                            <span class="data-label">poder aquisitivo do agronegócio</span>
-                        </div>
-                    </div>
-                    <p class="opportunity-text">
-                        <strong>Enquanto vocês competem por carros, ignoram o mercado mais lucrativo de Cuiabá.</strong>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Strategic Opportunities -->
-    <section class="opportunities" id="oportunidades">
-        <div class="section-container">
-            <div class="opportunities-header">
-                <span class="section-badge animate-fade-up">💡 Oportunidades Estratégicas</span>
-                <h2 class="section-title animate-fade-up">
-                    Como Transformar <span class="highlight-danger">Especialização Invisível</span> em <span class="highlight-success">Autoridade de Mercado</span>
-                </h2>
-            </div>
-
-            <div class="opportunities-grid">
-                <div class="opportunity-card animate-fade-up">
-                    <div class="card-icon">🎯</div>
-                    <h3>Reposicionamento Estratégico</h3>
-                    <p>Deixar de ser "oficina que atende máquinas" para se tornar <strong>"especialistas em máquinas que também atendem carros"</strong>.</p>
-                    <div class="opportunity-impact">
-                        <strong>Impacto:</strong> Diferenciação imediata da concorrência genérica
-                    </div>
-                </div>
-
-                <div class="opportunity-card animate-fade-up" style="animation-delay: 0.2s;">
-                    <div class="card-icon">🌾</div>
-                    <h3>Foco no Agronegócio</h3>
-                    <p>Aproveitar a localização privilegiada para se tornar <strong>referência em manutenção de máquinas agrícolas</strong> em Cuiabá.</p>
-                    <div class="opportunity-impact">
-                        <strong>Impacto:</strong> Acesso ao mercado mais lucrativo da região
-                    </div>
-                </div>
-
-                <div class="opportunity-card animate-fade-up" style="animation-delay: 0.4s;">
-                    <div class="card-icon">📱</div>
-                    <h3>Comunicação da Expertise</h3>
-                    <p>Usar Instagram para demonstrar <strong>conhecimento técnico específico</strong> em máquinas, não conteúdo genérico.</p>
-                    <div class="opportunity-impact">
-                        <strong>Impacto:</strong> Autoridade digital no nicho especializado
-                    </div>
-                </div>
-
-                <div class="opportunity-card animate-fade-up" style="animation-delay: 0.6s;">
-                    <div class="card-icon">🏆</div>
-                    <h3>Aproveitamento dos Assets</h3>
-                    <p>Transformar crescimento rápido e estrutura em <strong>prova de competência técnica</strong> para clientes especializados.</p>
-                    <div class="opportunity-impact">
-                        <strong>Impacto:</strong> Credibilidade baseada em resultados concretos
-                    </div>
-                </div>
-            </div>
-
-            <div class="opportunities-cta animate-fade-up" style="animation-delay: 0.8s;">
-                <div class="cta-content">
-                    <h3>⚡ A Janela de Oportunidade</h3>
-                    <p>Enquanto outros competem por preço no mercado genérico, vocês podem <strong>dominar um nicho lucrativo com pouca concorrência especializada</strong>.</p>
-                    <a href="#solucao" class="btn btn-primary" data-track="opportunities_solution">
-                        Ver Como Fazer Isso Acontecer
-                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
-                            <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Investment Analysis -->
-    <section class="investment" id="investimento">
-        <div class="section-container">
-            <div class="investment-header">
-                <span class="section-badge animate-fade-up">💰 Análise de Investimento</span>
-                <h2 class="section-title animate-fade-up">
-                    R$ 3.000: <span class="highlight-primary">Suficiente</span> para a Transformação?
-                </h2>
-            </div>
-
-            <div class="investment-analysis">
-                <div class="budget-card animate-fade-up">
-                    <div class="budget-header">
-                        <h3>🎯 Análise Honesta do Orçamento</h3>
-                    </div>
-                    <div class="budget-content">
-                        <div class="budget-item">
-                            <div class="item-label">Orçamento Disponível:</div>
-                            <div class="item-value">R$ 3.000</div>
-                        </div>
-                        <div class="budget-assessment">
-                            <p><strong>Realidade:</strong> Para uma transformação completa de marca, R$ 3k é um orçamento inicial que permite <em>começar a mudança</em>, não finalizá-la completamente.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="investment-options animate-fade-up" style="animation-delay: 0.3s;">
-                    <h3>💡 O Que R$ 3.000 Permite Fazer</h3>
-                    <div class="options-grid">
-                        <div class="option-card priority">
-                            <div class="option-icon">🎯</div>
-                            <h4>Estratégia + Logo</h4>
-                            <p>Reposicionamento estratégico completo + criação da nova identidade visual central</p>
-                            <div class="option-impact">
-                                <strong>Impacto:</strong> Base sólida para diferenciação
-                            </div>
-                        </div>
-                        
-                        <div class="option-card secondary">
-                            <div class="option-icon">📱</div>
-                            <h4>Fase 2 (Futura)</h4>
-                            <p>Desdobramento completo: materiais, sinalização, uniformes, comunicação digital</p>
-                            <div class="option-investment">
-                                <strong>Investimento adicional:</strong> R$ 2-4k
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="roi-projection animate-fade-up" style="animation-delay: 0.6s;">
-                    <div class="roi-card">
-                        <h3>📈 Projeção de ROI Realista</h3>
-                        <div class="roi-timeline">
-                            <div class="timeline-item">
-                                <div class="timeline-period">3-6 meses</div>
-                                <div class="timeline-result">Diferenciação clara da concorrência genérica</div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-period">6-12 meses</div>
-                                <div class="timeline-result">Primeiros clientes especializados em máquinas</div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-period">12+ meses</div>
-                                <div class="timeline-result">Autoridade reconhecida no nicho, margens maiores</div>
-                            </div>
-                        </div>
-                        
-                        <div class="roi-note">
-                            <p><strong>Realidade importante:</strong> ROI em branding é progressivo. Os primeiros sinais aparecem em 3-6 meses, mas o impacto real se consolida em 12-18 meses.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Intento Solution -->
-    <section class="solution" id="solucao">
-        <div class="section-container">
-            <div class="solution-header">
-                <span class="section-badge animate-fade-up">🚀 Solução Intento</span>
-                <h2 class="section-title animate-fade-up">
-                    Como Transformamos <span class="highlight-brand">Compact</span> em <span class="highlight-primary">Autoridade em Máquinas</span>
-                </h2>
-            </div>
-
-            <div class="solution-methodology">
-                <div class="methodology-intro animate-fade-up">
-                    <h3>🎯 Nossa Metodologia Estratégica</h3>
-                    <p>Não fazemos "identidade visual bonita". Criamos <strong>sistemas de marca que geram autoridade e convertem posicionamento em resultados financeiros</strong>.</p>
-                </div>
-
-                <div class="methodology-phases">
-                    <div class="phase-card animate-fade-up">
-                        <div class="phase-number">1</div>
-                        <div class="phase-content">
-                            <h4>Admissão: Diagnóstico Profundo</h4>
-                            <p>Análise completa da especialização, concorrência local e oportunidades no agronegócio de MT.</p>
-                            <div class="phase-deliverable">
-                                <strong>Entrega:</strong> Estratégia de reposicionamento específica
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="phase-card animate-fade-up" style="animation-delay: 0.2s;">
-                        <div class="phase-number">2</div>
-                        <div class="phase-content">
-                            <h4>Compressão: Identidade Estratégica</h4>
-                            <p>Criação de logo, paleta e tipografia que comunicam especialização técnica e confiabilidade madura.</p>
-                            <div class="phase-deliverable">
-                                <strong>Entrega:</strong> Identidade visual completa + manual de uso
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="phase-card animate-fade-up" style="animation-delay: 0.4s;">
-                        <div class="phase-number">3</div>
-                        <div class="phase-content">
-                            <h4>Ignição: Implementação Tática</h4>
-                            <p>Aplicação da nova marca em pontos de contato estratégicos para máximo impacto com o orçamento disponível.</p>
-                            <div class="phase-deliverable">
-                                <strong>Entrega:</strong> Materiais prioritários + plano de implementação
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="phase-card animate-fade-up" style="animation-delay: 0.6s;">
-                        <div class="phase-number">4</div>
-                        <div class="phase-content">
-                            <h4>Exaustão: Monitoramento e Evolução</h4>
-                            <p>Acompanhamento dos resultados e ajustes para maximizar o reconhecimento da especialização.</p>
-                            <div class="phase-deliverable">
-                                <strong>Entrega:</strong> Relatórios de performance + otimizações
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="solution-diferentials animate-fade-up" style="animation-delay: 0.8s;">
-                <h3>⚡ Por Que Intento é Diferente</h3>
-                <div class="diferentials-grid">
-                    <div class="diferential-item">
-                        <div class="diferential-icon">🎯</div>
-                        <h4>Estratégia Primeiro</h4>
-                        <p>Posicionamento antes de pixels</p>
-                    </div>
-                    <div class="diferential-item">
-                        <div class="diferential-icon">🔍</div>
-                        <h4>Análise Crítica</h4>
-                        <p>Questionamos suas premissas</p>
-                    </div>
-                    <div class="diferential-item">
-                        <div class="diferential-icon">📊</div>
-                        <h4>Resultados Mensuráveis</h4>
-                        <p>Marca que gera autoridade real</p>
-                    </div>
-                    <div class="diferential-item">
-                        <div class="diferential-icon">🚀</div>
-                        <h4>Implementação Prática</h4>
-                        <p>Do conceito ao resultado</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact/CTA Section -->
-    <section class="contact" id="contato">
-        <div class="section-container">
-            <div class="contact-content">
-                <div class="contact-header animate-fade-up">
-                    <h2>⚖️ Próximos Passos</h2>
-                    <div class="conclusion-cards">
-                        <div class="conclusion-card">
-                            <h3>💡 Diagnóstico Final</h3>
-                            <p>Vocês têm <strong>todos os ingredientes para dominar o nicho de máquinas em Cuiabá</strong> - especialização, localização estratégica, estrutura operacional e capacidade de investimento.</p>
-                        </div>
-                        
-                        <div class="conclusion-card">
-                            <h3>🎯 A Solução</h3>
-                            <p>Identidade e comunicação que <strong>transformem conhecimento técnico em autoridade percebida</strong>, posicionando vocês como os especialistas em máquinas que todo produtor rural de MT precisa conhecer.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact-cta animate-fade-up" style="animation-delay: 0.3s;">
-                    <div class="cta-main">
-                        <h3>🚀 Transformar Especialização em Autoridade?</h3>
-                        <p>Conversa de <strong>30 minutos</strong> para mostrar como essa transformação funcionaria na prática com seu orçamento.</p>
-                    </div>
-                    
-                    <div class="cta-buttons">
-                        <a href="https://api.whatsapp.com/send?phone=5565996137985&text=Olá! Vi o diagnóstico da Compact e quero entender como transformar nossa especialização em autoridade no mercado. Vamos conversar?" 
-                           class="btn btn-primary btn-whatsapp" data-track="contact_whatsapp">
-                            <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.106"/>
-                            </svg>
-                            WhatsApp: (65) 99613-7985
-                        </a>
-                        
-                        <a href="mailto:contato@intento.com.br?subject=Diagnóstico Compact - Interesse em Reunião&body=Olá! Vi o diagnóstico estratégico da Compact e gostaria de agendar uma conversa para entender como podemos transformar nossa especialização em autoridade no mercado." 
-                           class="btn btn-secondary" data-track="contact_email">
-                            <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2"/>
-                                <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2"/>
-                            </svg>
-                            Email: contato@intento.com.br
-                        </a>
-                    </div>
-                </div>
-
-                <div class="contact-info animate-fade-up" style="animation-delay: 0.6s;">
-                    <div class="info-grid">
-                        <div class="info-item">
-                            <div class="info-icon">👤</div>
-                            <div class="info-content">
-                                <strong>Contato:</strong> Jader Amorim
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon">📍</div>
-                            <div class="info-content">
-                                <strong>Localização:</strong> Cuiabá - MT
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon">📱</div>
-                            <div class="info-content">
-                                <strong>Instagram:</strong> @compactmaquinas
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <img src="assets/intento-logo.svg" alt="Intento" class="footer-logo">
-                    <p>Estratégia de marca para empresas que querem sair da competição por preço e construir autoridade em seus nichos.</p>
-                </div>
-                
-                <div class="footer-links">
-                    <h4>Metodologia</h4>
-                    <ul>
-                        <li><a href="#" data-track="footer_methodology">Admissão</a></li>
-                        <li><a href="#" data-track="footer_methodology">Compressão</a></li>
-                        <li><a href="#" data-track="footer_methodology">Ignição</a></li>
-                        <li><a href="#" data-track="footer_methodology">Exaustão</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-contact">
-                    <h4>Contato</h4>
-                    <ul>
-                        <li><a href="mailto:contato@intento.com.br" data-track="footer_contact">contato@intento.com.br</a></li>
-                        <li><a href="https://intento.com.br" data-track="footer_website">intento.com.br</a></li>
-                    </ul>
-                </div>
-            </div>
+        /* Mobile First - Base Styles */
+        @media (min-width: 576px) {
+            .custom-compact-theme .section-content .content-container {
+                padding-left: 8%;
+                padding-right: 8%;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .custom-compact-theme .section-content .content-container {
+                padding-left: 12%;
+                padding-right: 12%;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .custom-compact-theme .section-content .content-container {
+                padding-left: 15%;
+                padding-right: 15%;
+            }
+        }
+        
+        @media (min-width: 1200px) {
+            .custom-compact-theme .section-content .content-container {
+                padding-left: 18%;
+                padding-right: 18%;
+                max-width: 1400px;
+                margin: 0 auto;
+            }
+        }
+        
+        @media (min-width: 1400px) {
+            .custom-compact-theme .section-content .content-container {
+                padding-left: 20%;
+                padding-right: 20%;
+                max-width: 1600px;
+            }
+        }
+        
+        /* Typography Responsive - Desktop Up */
+        @media (max-width: 1024px) {
+            .custom-compact-theme .content-container h1 {
+                font-size: 2.25rem;
+            }
+            .custom-compact-theme .content-container h2 {
+                font-size: 1.875rem;
+            }
+            .custom-compact-theme .content-container h3 {
+                font-size: 1.375rem;
+            }
+            .custom-compact-theme .content-container p {
+                font-size: 1.0625rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .custom-compact-theme .section-content .content-container {
+                padding-left: 5%;
+                padding-right: 5%;
+                padding-top: 1.5rem;
+                padding-bottom: 1.5rem;
+                max-width: 100%;
+            }
             
-            <div class="footer-bottom">
-                <p>&copy; 2025 Intento. Todos os direitos reservados.</p>
-                <p>Diagnóstico realizado com metodologia proprietária para <strong>Compact</strong> - Cuiabá/MT</p>
+            .custom-compact-theme .title-header .title {
+                font-size: 3rem;
+            }
+            
+            .custom-compact-theme .title-header .subtitle {
+                font-size: 1.125rem;
+            }
+            
+            .custom-compact-theme .content-container h1 {
+                font-size: 2rem;
+            }
+            .custom-compact-theme .content-container h2 {
+                font-size: 1.75rem;
+            }
+            .custom-compact-theme .content-container h3 {
+                font-size: 1.25rem;
+            }
+            .custom-compact-theme .content-container h4 {
+                font-size: 1.125rem;
+            }
+            .custom-compact-theme .content-container p {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+            
+            .brand-header {
+                padding: 0.8rem 1rem;
+            }
+            
+            .brand-header .logo-text {
+                font-size: 0.9rem;
+                font-weight: 700;
+            }
+            
+            .brand-header .actions .button {
+                padding: 6px 15px;
+                font-size: 0.875rem;
+            }
+            
+            .photo-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .intro-message {
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+            
+            .intro-logo-img {
+                width: 100px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .custom-compact-theme .title-header .title {
+                font-size: 2.25rem;
+                line-height: 1.1;
+            }
+            
+            .custom-compact-theme .title-header .subtitle {
+                font-size: 1rem;
+            }
+            
+            .custom-compact-theme .content-container h1 {
+                font-size: 1.75rem;
+            }
+            .custom-compact-theme .content-container h2 {
+                font-size: 1.5rem;
+            }
+            .custom-compact-theme .content-container h3 {
+                font-size: 1.125rem;
+            }
+            .custom-compact-theme .content-container h4 {
+                font-size: 1rem;
+            }
+            .custom-compact-theme .content-container p {
+                font-size: 0.9375rem;
+                line-height: 1.6;
+            }
+            
+            .brand-header .logo-text {
+                font-size: 0.8rem;
+            }
+            
+            .intro-message {
+                font-size: 1.25rem;
+            }
+            
+            .intro-logo-img {
+                width: 80px;
+            }
+            
+            .custom-compact-theme .content-container a.link-button {
+                font-size: 1rem;
+                padding: 10px 24px;
+            }
+            
+            /* Team section responsive */
+            .section h2 {
+                font-size: 2rem !important;
+            }
+            
+            .section h3 {
+                font-size: 1.125rem !important;
+            }
+            
+            .section p {
+                font-size: 0.9375rem !important;
+            }
+            
+            /* Team card specific */
+            .team-card h3 {
+                font-size: 1.125rem !important;
+            }
+            
+            .team-card p {
+                font-size: 0.875rem !important;
+            }
+        }
+
+        /* Layout Base */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: #f7f7f7;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .publication-viewer {
+            padding-top: 80px; /* Space for fixed header */
+        }
+
+        .wp-swipe-panel-group-view {
+            transform: translate3d(0px, 0px, 0px);
+        }
+
+        .article-panel {
+            min-height: 100vh;
+        }
+
+        .section {
+            position: relative;
+            min-height: 400px;
+        }
+
+        .section-view {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .section-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .section-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .content-container {
+            max-width: 100%;
+            margin: 0 auto;
+            position: relative;
+            width: 100%;
+        }
+
+        .image-wrapper {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .caption {
+            font-style: italic;
+            color: #666;
+            font-size: 14px;
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+
+        /* Hide elements initially */
+        .hidden {
+            display: none;
+        }
+
+        /* Spacer */
+        .content-spacer {
+            height: 2rem;
+        }
+
+        /* Grid for photo sections */
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+            width: 100%;
+        }
+        
+        @media (min-width: 1200px) {
+            .photo-grid {
+                grid-template-columns: repeat(2, 1fr);
+                max-width: 1000px;
+                margin: 2rem auto;
+            }
+        }
+
+        .photo-grid .image-wrapper {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body class="desktop-ui-visible svg touch-enabled responsive-images-loaded">
+    <!-- Loading/Intro Screen -->
+    <div class="intro-screen" id="introScreen">
+        <div class="intro-content">
+            <div class="intro-logo">
+                <img src="assets/marketing-cheio-graxa-logo-mono.png" alt="Marketing Cheio de Graxa" class="intro-logo-img">
+            </div>
+            <h1 class="intro-message">Jader, você acabou de ganhar
+um presente</h1>
+            <div class="loading-dots">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-    </footer>
+    </div>
 
-    <!-- JavaScript -->
-    <script src="js/main.js"></script>
-    <script src="js/analytics.js"></script>
+    <div id="app">
+        <div id="publication-viewer" class="publication-viewer">
+            <!-- Fixed Header -->
+            <div class="brand-header">
+                <div class="branding">
+                    <span class="logo-text">MARKETING CHEIO DE GRAXA</span>
+                </div>
+                <div class="actions">
+                    <a class="button pulse-button" href="https://calendar.app.google/pfkR54TkVkLCXYVE7" target="_blank">Quero uma marca</a>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="wp-swipe-panel-group-view">
+                <div class="wp-swipe-panel-group-panel article-panel">
+                    <div class="article custom-compact-theme sections-article-layout">
+                        
+                        <!-- Hero Section -->
+                        <div class="section title-section title-center fade-in-section">
+                            <div class="section-view">
+                                <div class="section-background">
+                                </div>
+                                <div class="section-content">
+                                    <div class="content-container">
+                                        <div class="title-header">
+                                            <div class="title-header-view">
+                                                <h1 class="title">COMPACT</h1>
+                                                <h2 class="subtitle">Diagnóstico de Marca - Máquinas Agrícolas</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Introduction Section -->
+                        <div class="section single-column-section fade-in-section">
+                            <div class="section-view">
+                                <div class="section-content">
+                                    <div class="content-container">
+                                        <h3>Grande satisfação em falar com você, Jader Amorim!</h3>
+                                        <p>Aqui quem fala é o Rodrigo Saddock, do <strong>Marketing Cheio de Graxa</strong>, especialista em criação de marca para OFICINAS MECÂNICAS. Provavelmente você já viu alguma marca criada por nós ou conhece algum parceiro que foi nosso cliente.</p>
+                                        
+                                        <h3>Preciso ser direto aqui, beleza?</h3>
+                                        <p>Sei que você não gosta de perder tempo e nem gosta de enrolação, então nada de encher linguiça. Vamos direto ao ponto.</p>
+                                        
+                                        <h3>Minha análise sincera da marca da Compact</h3>
+                                        <blockquote>⚠️ AVISO IMPORTANTE: Esta análise é baseada em poucas informações e não deve ser usada para decisões finais. É apenas um primeiro olhar que precisa ser aprofundado com mais pesquisas.</blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Current Analysis Section -->
+                        <div class="section single-column-section fade-in-section">
+                            <div class="section-view">
+                                <div class="section-content">
+                                    <div class="content-container">
+                                        <div class="image">
+                                            <div class="image-wrapper">
+                                                <img src="./assets/compact-current-analysis.jpg" alt="Análise atual da marca Compact" data-image-width="1012" data-image-height="970">
+                                            </div>
+                                        </div>
+                                        
+                                        <h3>🎯 O QUE DESCOBRI SOBRE VOCÊS</h3>
+                                        <p><strong>Empresa:</strong> Compact - Máquinas Agrícolas</p>
+                                        <p><strong>Localização:</strong> Cuiabá - MT</p>
+                                        <p><strong>Tempo de mercado:</strong> 1-2 anos</p>
+                                        <p><strong>Equipe:</strong> 2-5 funcionários</p>
+                                        <p><strong>Faturamento:</strong> R$ 10.000 - 30.000</p>
+                                        <p><strong>Principal desafio:</strong> Atrair novos clientes</p>
+                                        <p><strong>Público-alvo:</strong> Produtores rurais com renda média de R$ 3.000</p>
+                                        <p><strong>Diferencial:</strong> Confiança e qualidade no atendimento</p>
+                                        <p><strong>Presença digital:</strong> @compactmaquinas no Instagram</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Problems Section -->
+                        <div class="section single-column-section fade-in-section">
+                            <div class="section-view">
+                                <div class="section-content">
+                                    <div class="content-container">
+                                        <h3>🚨 PROBLEMAS QUE IDENTIFIQUEI</h3>
+                                        
+                                        <h4>1. Nome genérico demais</h4>
+                                        <p>"Compact" é um nome muito genérico no setor de máquinas. Não comunica especialização em agricultura e pode ser confundido com qualquer empresa de equipamentos compactos.</p>
+                                        
+                                        <h4>2. Posicionamento indefinido</h4>
+                                        <p>Não fica claro se vocês são revendedores, fabricantes, prestadores de serviço ou todos os três. Essa indefinição confunde o cliente na hora da decisão.</p>
+                                        
+                                        <h4>3. Diferencial mal comunicado</h4>
+                                        <p>"Confiança e qualidade" é o que TODOS no agronegócio falam. Não é um diferencial, é obrigação básica.</p>
+                                        
+                                        <h4>4. Presença digital fraca</h4>
+                                        <p>Instagram sozinho não sustenta negócios sérios no agro. Falta site, presença no Google e estratégia digital consistente.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Unique Opportunity Section -->
+                        <div class="section single-column-section fade-in-section">
+                            <div class="section-view">
+                                <div class="section-content">
+                                    <div class="content-container">
+                                        <h3>🌟 OPORTUNIDADE ÚNICA IDENTIFICADA</h3>
+                                        <p><strong>Compact tem diferencial que nenhum concorrente pode copiar:</strong></p>
+                                        <p>✅ <strong>Localização privilegiada:</strong> Hub do agronegócio em Mato Grosso<br>
+                                        ✅ <strong>Especialização em máquinas:</strong> @compactmaquinas já sugere nicho<br>
+                                        ✅ <strong>Mercado em expansão:</strong> Agronegócio MT cresce constantemente<br>
+                                        ✅ <strong>Relacionamento próximo:</strong> Empresas pequenas têm vantagem no atendimento personalizado</p>
+                                        
+                                        <h3>📊 SITUAÇÃO ATUAL DA MARCA</h3>
+                                        
+                                        <h4>🟢 PONTOS FORTES</h4>
+                                        <p>✅ <strong>Localização estratégica:</strong> Cuiabá-MT, coração do agronegócio brasileiro<br>
+                                        ✅ <strong>Especialização clara:</strong> Máquinas agrícolas e industriais<br>
+                                        ✅ <strong>Estrutura robusta:</strong> Crescimento consistente em 1-2 anos<br>
+                                        ✅ <strong>Presença digital:</strong> @compactmaquinas no Instagram<br>
+                                        ✅ <strong>Diferencial de atendimento:</strong> Confiança e qualidade reconhecidas</p>
+                                        
+                                        <h4>🔴 PROBLEMAS DE MARCA IDENTIFICADOS</h4>
+                                        <p>❌ <strong>Nome genérico demais:</strong> "Compact" não comunica especialização em agricultura<br>
+                                        ❌ <strong>Posicionamento indefinido:</strong> Não fica claro se são revendedores, fabricantes ou prestadores de serviço<br>
+                                        ❌ <strong>Diferencial mal comunicado:</strong> "Confiança e qualidade" é o que todos falam<br>
+                                        ❌ <strong>Presença digital limitada:</strong> Instagram sozinho não sustenta negócios sérios no agro</p>
+                                        
+                                        <h3>🎯 O PROBLEMA CENTRAL</h3>
+                                        <blockquote>Vocês estão no maior hub do agronegócio brasileiro, mas competem como empresa genérica de equipamentos.</blockquote>
+                                        
+                                        <h3>🔍 COMO A MARCA ATUAL DESPERDIÇA OPORTUNIDADE ÚNICA</h3>
+                                        
+                                        <h4>1. Localização Estratégica vs. Comunicação Genérica</h4>
+                                        <p><strong>"Compact"</strong> = nome genérico que qualquer empresa pode usar<br>
+                                        <strong>Cuiabá-MT</strong> = maior hub do agronegócio brasileiro não explorado na comunicação</p>
+                                        
+                                        <h4>2. Especialização Invisível</h4>
+                                        <p><strong>@compactmaquinas</strong> sugere especialização<br>
+                                        <strong>Comunicação atual</strong> não reflete expertise em agricultura</p>
+                                        
+                                        <h4>3. Mercado Subutilizado</h4>
+                                        <p><strong>Mato Grosso</strong> = maior produtor agrícola do Brasil<br>
+                                        <strong>Posicionamento atual</strong> não explora essa vantagem geográfica única</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- How Strong Brand Works Section -->
+                        <div class="section single-column-section fade-in-section">
+                            <div class="section-view">
+                                <div class="section-content">
+                                    <div class="content-container">
+                                        <h3>💡 COMO UMA MARCA FORTE EXPLORA O DIFERENCIAL ÚNICO</h3>
+                                        
+                                        <h4>Identidade Baseada na Especialização Regional:</h4>
+                                        <p>✅ Nome único focado em máquinas agrícolas MT<br>
+                                        ✅ Especialização regional como diferencial principal<br>
+                                        ✅ Localização estratégica como vantagem competitiva<br>
+                                        ✅ Expertise em solo e cultura específicos da região</p>
+                                        
+                                        <h4>Comunicação da Especialização:</h4>
+                                        <p>✅ "Os especialistas em máquinas agrícolas de MT"<br>
+                                        ✅ Conhecimento técnico regional como diferencial<br>
+                                        ✅ Hub do agronegócio como positioning<br>
+                                        ✅ Relacionamento próximo + expertise técnica</p>
+                                        
+                                        <h4>Diferenciação Total:</h4>
+                                        <p>✅ Nome protegível vs. genéricos<br>
+                                        ✅ Especialização regional vs. empresas sem foco<br>
+                                        ✅ Localização estratégica + conhecimento técnico<br>
+                                        ✅ Presença digital + autoridade técnica alinhadas</p>
+                                        
+                                        <h3>📈 RESULTADOS ESPERADOS COM A NOVA MARCA</h3>
+                                        
+                                        <h4>Curto Prazo (3-6 meses):</h4>
+                                        <p>✅ Diferenciação total de empresas genéricas de máquinas<br>
+                                        ✅ Reconhecimento como "especialistas em agro MT"<br>
+                                        ✅ Proteção legal da identidade única</p>
+                                        
+                                        <h4>Médio Prazo (6-12 meses):</h4>
+                                        <p>✅ Referência em máquinas agrícolas da região<br>
+                                        ✅ Atração de clientes que valorizam especialização local<br>
+                                        ✅ Parcerias estratégicas com players do agronegócio</p>
+                                        
+                                        <h4>Longo Prazo (1-2 anos):</h4>
+                                        <p>✅ Ícone regional em máquinas agrícolas<br>
+                                        ✅ Expansão baseada na marca única e protegida<br>
+                                        ✅ Referência técnica para o agronegócio de MT</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Solution Section -->
+                        <div class="section single-column-section fade-in-section">
+                            <div class="section-view">
+                                <div class="section-content">
+                                    <div class="content-container">
+                                        <h3>⚖️ CONCLUSÃO E PRÓXIMOS PASSOS</h3>
+                                        
+                                        <blockquote>A Compact tem potencial no mercado agrícola de MT, mas precisa de identidade forte e posicionamento claro para se destacar da concorrência.</blockquote>
+                                        
+                                        <p>Você não precisa de mais conhecimento técnico - precisa de marca que comunique autoridade e especialização no segmento agrícola.</p>
+                                        
+                                        <h3>A Solução:</h3>
+                                        <h4>Projeto de marca que transforma potencial em vantagem competitiva, incluindo:</h4>
+                                        
+                                        <p>✅ Nome/marca registrável e protegida<br>
+                                        ✅ Identidade visual profissional<br>
+                                        ✅ Posicionamento estratégico claro<br>
+                                        ✅ Materiais de comunicação<br>
+                                        ✅ Estratégia de diferenciação regional</p>
+                                        
+                                        <blockquote>"Não adianta ser bom, é necessário ser visto como bom"</blockquote>
+                                        
+                                        <p>Mas você é realmente visto como bom para os novos clientes? Ou parecem ser "só mais uma empresa de máquinas"?</p>
+                                        
+                                        <p>Pelo que eu percebi, vocês têm um trabalho impecável e uma prova disso é que chegaram onde estão hoje, e a gente sabe que a história de vocês é valiosa demais para passar despercebida. E é isso que queremos te alertar sobre sua marca atual.</p>
+                                        
+                                        <p><strong>A marca que trouxe vocês até aqui, não é a mesma que vai levá-los ao próximo nível.</strong></p>
+                                        
+                                        <p>Veja como nós já transformamos e diferenciamos outras empresas do setor, por exemplo:</p>
+                                        
+                                        <div class="image">
+                                            <div class="image-wrapper">
+                                                <img src="./assets/compact-brand-analysis.jpg" alt="Análise de marca personalizada para Compact" data-image-width="619" data-image-height="403">
+                                                <div class="caption">A marca atual de vocês é funcional, mas não estratégica. Ela não comunica o valor que vocês entregam nem cria diferenciação no mercado competitivo de máquinas.</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div style="text-align: center; margin: 3rem 0;">
+                                            <a href="https://calendar.app.google/pfkR54TkVkLCXYVE7" class="link-button pulse-button" target="_blank">QUERO DISCUTIR MEU PROJETO</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Portfolio Section -->
+                        <div class="section photo-grid-section fade-in-section">
+                            <div class="section-view">
+                                <div class="section-content">
+                                    <div class="content-container">
+                                        <h3 style="text-align: center; margin-bottom: 3rem;">ALGUNS TRABALHOS QUE JÁ FIZEMOS</h3>
+                                        
+                                        <div class="photo-grid">
+                                            <div class="image-wrapper">
+                                                <img src="./assets/portfolio-1.jpg" alt="A&E Centro automotivo" data-image-width="2560" data-image-height="1440">
+                                                <div class="caption">A&E Centro automotivo</div>
+                                            </div>
+                                            
+                                            <div class="image-wrapper">
+                                                <img src="./assets/portfolio-2.jpg" alt="Garage 35" data-image-width="2560" data-image-height="1439">
+                                                <div class="caption">Garage 35</div>
+                                            </div>
+                                            
+                                            <div class="image-wrapper">
+                                                <img src="./assets/portfolio-3.jpg" alt="Mecânica Licciotti" data-image-width="2560" data-image-height="1440">
+                                                <div class="caption">Mecânica Licciotti</div>
+                                            </div>
+                                            
+                                            <div class="image-wrapper">
+                                                <img src="./assets/portfolio-4.jpg" alt="Funilaria Cappelli" data-image-width="2560" data-image-height="1440">
+                                                <div class="caption">Funilaria Cappelli</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial Section -->
+                        <div class="section single-column-section fade-in-section">
+                            <div class="section-view">
+                                <div class="section-content">
+                                    <div class="content-container">
+                                        <h3 style="text-align: center; color: #f83600; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 2rem; font-weight: 700; margin-bottom: 2rem;">O QUE DIZEM NOSSOS CLIENTES</h3>
+                                        
+                                        <div class="image">
+                                            <div class="image-wrapper">
+                                                <img src="./assets/testimonial-everton.jpg" alt="Depoimento do Everton, Proprietário da EVOS AUTOMOTIVE" data-image-width="810" data-image-height="296">
+                                                <div class="caption">Depoimento do Everton, Proprietário da EVOS AUTOMOTIVE, em Curitiba- PR</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="image">
+                                            <div class="image-wrapper">
+                                                <img src="./assets/testimonial-sitta.jpg" alt="Depoimento Gustavo Sitta" data-image-width="366" data-image-height="80">
+                                                <div class="caption"><strong>Gustavo Sitta, Fundador da SITTA CAR DETAIL em Arujá-SP</strong></div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="image">
+                                            <div class="image-wrapper">
+                                                <img src="./assets/testimonial-josiel.jpg" alt="Depoimento Josiel Predabon" data-image-width="495" data-image-height="414">
+                                                <div class="caption"><strong>Josiel, Proprietário da mecânica Predabon em Concórdia - SC</strong></div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div style="margin: 2rem 0; padding: 1.5rem; background-color: #f8f9fa; border-radius: 12px; border-left: 4px solid #f83600;">
+                                            <h4 style="color: #f83600; margin-bottom: 1rem;">🎥 Veja o depoimento completo da Mecânica Licciotti</h4>
+                                            <p style="margin-bottom: 1rem;">Assista como transformamos uma oficina em referência regional e veja os resultados reais que nossa metodologia pode gerar para seu negócio.</p>
+                                            
+                                            <!-- YouTube Video Embed -->
+                                            <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; margin: 1rem 0; border-radius: 8px; overflow: hidden;">
+                                                <iframe 
+                                                    src="https://www.youtube.com/embed/ZPCs0KvFJLc" 
+                                                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+                                                    allowfullscreen
+                                                    title="Depoimento Mecânica Licciotti - Marketing Cheio de Graxa">
+                                                </iframe>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Call to Action Section -->
+                        <div class="section single-column-section fade-in-section" style="background-color: #f83600; text-align: center; color: white; padding: 4rem 0;">
+                            <div class="section-view">
+                                <div class="section-content">
+                                    <div class="content-container">
+                                        <h2 style="color: white; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 2.5rem; font-weight: 800; margin-bottom: 2rem; line-height: 1.2;">🏁 E aí? Prontos para andar na contramão da guerra de preços?</h2>
+                                        
+                                        <p style="color: rgba(255,255,255,0.95); font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 1.25rem; font-weight: 400; line-height: 1.6; margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto;">Toque no botão abaixo e entre numa consultoria por vídeo comigo, para te dar o caminho da diferenciação da sua marca. Ao final, você saberá qual o próximo passo que deverá tomar.</p>
+                                        
+                                        <div style="margin: 3rem 0;">
+                                            <a href="https://calendar.app.google/pfkR54TkVkLCXYVE7" class="link-button pulse-button" target="_blank" style="background-color: white; color: #f83600; border-color: white; font-size: 1.25rem; padding: 18px 40px; font-weight: 700;">QUERO ANDAR NA CONTRAMÃO DA GUERRA DE PREÇOS</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Why Work With Us Section -->
+                        <div class="section single-column-section fade-in-section" style="background-color: #333333; text-align: center; color: white; padding: 4rem 0;">
+                            <div class="section-view">
+                                <div class="section-content">
+                                    <div class="content-container">
+                                        <h2 style="color: white; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 2.25rem; font-weight: 800; margin-bottom: 2rem;">POR QUE TRABALHAR COM A GENTE?</h2>
+                                        
+                                        <p style="color: rgba(255,255,255,0.95); font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 1.125rem; font-weight: 500; line-height: 1.6; margin-bottom: 3rem; max-width: 900px; margin-left: auto; margin-right: auto;">Além de ser o maior nome em marketing para oficinas, tenho <strong style="color: #f83600;">CONTATO DIRETO COM OS MAIORES NOMES DA REPARAÇÃO AUTOMOTIVA DO PAÍS</strong></p>
+                                        
+                                        <div class="image" style="margin: 3rem 0;">
+                                            <div class="image-wrapper">
+                                                <img src="./assets/avex-palestra.jpg" alt="Rodrigo palestrando na AVEX" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.3);">
+                                                <div class="caption" style="color: rgba(255,255,255,0.9); font-size: 1rem; margin-top: 1rem; line-height: 1.5;">A imagem mostra o momento em que palestrei na AVEX, para uma plateia cheia de donos de oficina. Pouco tempo depois, me tornei sócio da SELECTA, minha própria oficina em Porto Belo - SC</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <p style="color: rgba(255,255,255,0.95); font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 1.125rem; font-weight: 400; line-height: 1.6; margin-bottom: 2rem;">Estamos em contato direto e temos em nossa cartela de clientes, nomes de referência na reparação automotiva nacional. <strong style="color: #f83600;">Queremos colocar dinheiro no seu bolso.</strong></p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Truth Section -->
+                        <div class="section single-column-section fade-in-section" style="background-color: #f8f9fa; padding: 3rem 0;">
+                            <div class="section-view">
+                                <div class="section-content">
+                                    <div class="content-container" style="text-align: center;">
+                                        <div style="background: #f83600; padding: 3rem 2rem; border-radius: 20px; color: white; max-width: 800px; margin: 0 auto; box-shadow: 0 10px 30px rgba(248, 54, 0, 0.2);">
+                                            <h3 style="color: white; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 1.75rem; font-weight: 700; margin-bottom: 1.5rem;">💰 Queremos colocar dinheiro no seu bolso</h3>
+                                            <p style="color: rgba(255,255,255,0.95); font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 1.125rem; font-weight: 500; line-height: 1.6; margin-bottom: 1.5rem;">Vamos falar a verdade? Você não tá nem aí pra deixar a sua oficina mais "bonita". O que você espera é que isso aumente a atração e a retenção de clientes, não é mesmo?</p>
+                                            <p style="color: white; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 1.375rem; font-weight: 800; margin: 0;">Esse é o nosso objetivo.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Author Section - Rodrigo Highlight -->
+                        <div class="section single-column-section" style="background: linear-gradient(135deg, #333333, #2a2a2a); padding: 4rem 0;">
+                            <div class="section-view">
+                                <div class="section-content">
+                                    <div class="content-container" style="text-align: center; color: white;">
+                                        <div style="background: rgba(255,255,255,0.05); padding: 3rem; border-radius: 20px; max-width: 600px; margin: 0 auto; border: 1px solid rgba(248, 54, 0, 0.3);">
+                                            <div class="image" style="margin-bottom: 2rem;">
+                                                <div class="image-wrapper">
+                                                    <img src="../../FOtos da equipe/Rodrigo Saddock.png" alt="Rodrigo Saddock" style="border-radius: 50%; width: 200px; height: 200px; object-fit: cover; margin: 0 auto; border: 4px solid #f83600; box-shadow: 0 8px 24px rgba(248, 54, 0, 0.3);">
+                                                </div>
+                                            </div>
+                                            
+                                            <h2 style="color: #f83600; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin-bottom: 1rem; font-size: 2.25rem; font-weight: 800;">Rodrigo Saddock</h2>
+                                            <p style="color: rgba(255,255,255,0.95); font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 1.125rem; font-weight: 400; line-height: 1.6; margin-bottom: 2rem;">Especialista em criação de marca para OFICINAS MECÂNICAS. 18 anos de experiência prática em oficina mecânica. Mais de 50 oficinas transformadas por uma marca única e a sua é a próxima.</p>
+                                            
+                                            <div style="margin: 2rem 0;">
+                                                <a href="https://calendar.app.google/pfkR54TkVkLCXYVE7" class="link-button pulse-button" target="_blank" style="background-color: #f83600; color: white; border-color: #f83600; font-size: 1.125rem; padding: 16px 32px; font-weight: 700;">AGENDAR CONVERSA</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Team Section -->
+                        <div class="section single-column-section fade-in-section" style="background-color: #f8f9fa; padding: 4rem 0;">
+                            <div class="section-view">
+                                <div class="section-content">
+                                    <div class="content-container">
+                                        <div style="text-align: center; margin-bottom: 3rem;">
+                                            <h2 style="color: #f83600; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; line-height: 1.2;">🚀 Conheça a Equipe do Marketing Cheio de Graxa</h2>
+                                            <p style="color: #666; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 1.25rem; font-weight: 400; line-height: 1.6;">Time multidisciplinar especializado em transformar oficinas mecânicas</p>
+                                        </div>
+
+                                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; width: 100%; margin: 0 auto;">
+                                            <!-- Rodrigo Saddock -->
+                                            <div class="team-card fade-in-up" style="background: white; padding: 2rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center; transition: transform 0.3s ease;">
+                                                <div style="margin-bottom: 1.5rem;">
+                                                    <img src="../../FOtos da equipe/Rodrigo Saddock.png" alt="Rodrigo Saddock" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid #f83600; margin: 0 auto; display: block;">
+                                                </div>
+                                                <div>
+                                                    <h3 style="color: #333333; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin-bottom: 0.5rem; font-size: 1.375rem; font-weight: 700;">Rodrigo Saddock</h3>
+                                                    <p style="color: #f83600; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-weight: 600; margin-bottom: 1rem; font-size: 0.9375rem; text-transform: uppercase; letter-spacing: 0.5px;">Fundador Marketing Cheio de Graxa</p>
+                                                    <p style="color: #666; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 0; line-height: 1.6; font-size: 1rem; font-weight: 400;">O maior nome de marketing para oficinas do país, fundador do Marketing Cheio de Graxa e do Repare: a primeira escola de gestão, marketing e vendas para oficinas.</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Gabriel Gomes -->
+                                            <div class="team-card fade-in-up" style="background: white; padding: 2rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center; transition: transform 0.3s ease;">
+                                                <div style="margin-bottom: 1.5rem;">
+                                                    <img src="../../FOtos da equipe/Gabriel Gomes.png" alt="Gabriel Gomes" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid #f83600; margin: 0 auto; display: block;">
+                                                </div>
+                                                <div>
+                                                    <h3 style="color: #333333; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin-bottom: 0.5rem; font-size: 1.375rem; font-weight: 700;">Gabriel Gomes</h3>
+                                                    <p style="color: #f83600; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-weight: 600; margin-bottom: 1rem; font-size: 0.9375rem; text-transform: uppercase; letter-spacing: 0.5px;">Fundador da Intento</p>
+                                                    <p style="color: #666; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 0; line-height: 1.6; font-size: 1rem; font-weight: 400;">O maior nome de marcas para oficinas do País, Fundador da Intento e do podcast Quinta marcha.</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Yuri Matos -->
+                                            <div class="team-card fade-in-up" style="background: white; padding: 2rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center; transition: transform 0.3s ease;">
+                                                <div style="margin-bottom: 1.5rem;">
+                                                    <img src="../../FOtos da equipe/Yuri Matos.png" alt="Yuri Matos" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid #f83600; margin: 0 auto; display: block;">
+                                                </div>
+                                                <div>
+                                                    <h3 style="color: #333333; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin-bottom: 0.5rem; font-size: 1.375rem; font-weight: 700;">Yuri Matos</h3>
+                                                    <p style="color: #f83600; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-weight: 600; margin-bottom: 1rem; font-size: 0.9375rem; text-transform: uppercase; letter-spacing: 0.5px;">Fundador Focus Company</p>
+                                                    <p style="color: #666; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 0; line-height: 1.6; font-size: 1rem; font-weight: 400;">Designer de marcas Sênior com atuação em projetos internacionais, Fundador da Focus Company Brasil.</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Byanca -->
+                                            <div class="team-card fade-in-up" style="background: white; padding: 2rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center; transition: transform 0.3s ease;">
+                                                <div style="margin-bottom: 1.5rem;">
+                                                    <img src="../../FOtos da equipe/Byanca.png" alt="Byanca" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid #f83600; margin: 0 auto; display: block;">
+                                                </div>
+                                                <div>
+                                                    <h3 style="color: #333333; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin-bottom: 0.5rem; font-size: 1.375rem; font-weight: 700;">Byanca</h3>
+                                                    <p style="color: #f83600; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-weight: 600; margin-bottom: 1rem; font-size: 0.9375rem; text-transform: uppercase; letter-spacing: 0.5px;">Fundadora B.Marketing</p>
+                                                    <p style="color: #666; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 0; line-height: 1.6; font-size: 1rem; font-weight: 400;">Social media, Gestora de projetos e fundadora da B.Marketing.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: #333333; border-radius: 20px; color: white;">
+                                            <h3 style="color: white; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin-bottom: 1rem; font-size: 1.5rem; font-weight: 700;">🎯 Nossa Abordagem</h3>
+                                            <p style="color: rgba(255,255,255,0.9); font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 0; font-size: 1.125rem; line-height: 1.6; font-weight: 400;">Time multidisciplinar com expertise comprovada em transformar negócios especializados em <strong style="font-weight: 600;">autoridades reconhecidas em seus nichos de mercado</strong>.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Footer Section -->
+                        <div class="section single-column-section fade-in-section" style="background-color: #f83600; text-align: center; color: white; padding: 3rem 0;">
+                            <div class="section-view">
+                                <div class="section-content">
+                                    <div class="content-container">
+                                        <div style="margin-bottom: 2rem; text-align: center;">
+                                            <img src="assets/marketing-cheio-graxa-logo-mono.png" alt="Marketing Cheio de Graxa" style="width: 150px; height: auto; margin: 0 auto 1rem auto; display: block;">
+                                        </div>
+                                        <h2 style="color: white; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin-bottom: 1rem; font-size: 2.25rem; font-weight: 800;">Marketing Cheio de Graxa</h2>
+                                        <p style="color: rgba(255,255,255,0.9); font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin-bottom: 2rem; font-size: 1.125rem; font-weight: 400; line-height: 1.6;">Estratégia de marca para oficinas mecânicas que querem sair da competição por preço e se tornarem referência em suas regiões</p>
+                                        
+                                        <div style="margin: 2rem 0;">
+                                            <a href="https://calendar.app.google/pfkR54TkVkLCXYVE7" class="link-button pulse-button" target="_blank" style="background-color: white; color: #f83600; border-color: white;">QUERO MINHA MARCA ESTRATÉGICA</a>
+                                        </div>
+                                        
+                                        <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.3); font-size: 12px; opacity: 0.7;">
+                                            <p style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 0.75rem; font-weight: 400;">Esta análise foi gerada com base nas informações fornecidas e deve ser complementada com pesquisa aprofundada.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simple scroll animations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scrolling for anchor links
+            const links = document.querySelectorAll('a[href^="#"]');
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+            
+            // Fade in animation on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe all fade-in sections
+            document.querySelectorAll('.fade-in-section').forEach(section => {
+                observer.observe(section);
+            });
+
+            // Track scroll for header background
+            const header = document.querySelector('.brand-header');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    header.style.backgroundColor = 'rgba(255,255,255,0.98)';
+                    header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+                } else {
+                    header.style.backgroundColor = 'rgba(255,255,255,0.95)';
+                    header.style.boxShadow = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
